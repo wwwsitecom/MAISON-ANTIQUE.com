@@ -1,0 +1,1170 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #29251f;
+  background: #f7f4ee;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ========================================
+   TOP BAR
+======================================== */
+
+.topbar {
+  height: 34px;
+  background: #25231f;
+  color: #eee9df;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 5%;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+
+  letter-spacing: 0.08em;
+}
+
+.top-links {
+  display: flex;
+  gap: 24px;
+}
+
+.topbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.nav {
+  height: 86px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5%;
+
+  border-bottom: 1px solid #ddd6ca;
+
+  background: #f7f4ee;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 5;
+}
+
+
+/* LOGO */
+
+.logo {
+  color: #25231f;
+
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1;
+}
+
+.logo span {
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 0.42em;
+}
+
+.logo b {
+  font-size: 25px;
+
+  letter-spacing: 0.08em;
+
+  margin-top: 5px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+  display: flex;
+
+  gap: 34px;
+}
+
+.nav-links a {
+  color: #39342d;
+
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+}
+
+
+/* NAV BUTTONS */
+
+.nav-actions {
+  display: flex;
+
+  gap: 16px;
+
+  align-items: center;
+}
+
+.nav-actions button {
+  color: #39342d;
+
+  background: none;
+
+  border: 0;
+
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+}
+
+.nav-actions button:first-child {
+  font-size: 25px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+  min-height: 590px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(25, 22, 18, 0.7),
+      rgba(25, 22, 18, 0.1)
+    ),
+    url("https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1800&q=85")
+    center / cover;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 7%;
+
+  color: white;
+}
+
+.hero-copy {
+  max-width: 590px;
+}
+
+
+/* SMALL SECTION TITLE */
+
+.eyebrow {
+  margin: 0 0 15px;
+
+  color: #8a6e48;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.24em;
+
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #ddd0bd;
+}
+
+
+/* HERO TITLE */
+
+.hero h1 {
+  font-size: 64px;
+
+  line-height: 1.02;
+
+  font-weight: 400;
+
+  margin: 0 0 22px;
+}
+
+.hero h1 em {
+  font-weight: 400;
+}
+
+
+/* HERO DESCRIPTION */
+
+.hero p:not(.eyebrow) {
+  max-width: 500px;
+
+  color: #eee;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 15px 26px;
+
+  background: #29251f;
+
+  color: white;
+
+  border: 0;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+.hero .btn {
+  background: #f2eee6;
+
+  color: #29251f;
+}
+
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.intro {
+  text-align: center;
+
+  padding: 105px 20px 80px;
+}
+
+.intro h2 {
+  font-size: 42px;
+
+  font-weight: 400;
+
+  margin: 0 0 15px;
+}
+
+.intro-text {
+  max-width: 610px;
+
+  margin: auto;
+
+  color: #655f55;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
+
+.categories,
+.shop,
+.journal {
+  padding: 60px 5% 100px;
+}
+
+
+/* SECTION HEAD */
+
+.section-head {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+
+  margin-bottom: 32px;
+}
+
+.section-head h2 {
+  font-size: 42px;
+
+  font-weight: 400;
+
+  margin: 0 0 15px;
+}
+
+
+/* ========================================
+   CATEGORY GRID
+======================================== */
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: #d9d1c4;
+}
+
+
+/* CATEGORY CARD */
+
+.category-grid button {
+  border: 0;
+
+  background: #eee9df;
+
+  padding: 35px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 170px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.category-grid button:hover {
+  background: #e4ddd1;
+
+  transform: translateY(-2px);
+}
+
+
+/* CATEGORY ICON */
+
+.category-grid span {
+  font-size: 29px;
+
+  margin-bottom: 25px;
+}
+
+
+/* CATEGORY TITLE */
+
+.category-grid b {
+  font-size: 21px;
+
+  font-weight: 400;
+}
+
+
+/* CATEGORY DESCRIPTION */
+
+.category-grid small {
+  margin-top: 8px;
+
+  color: #777066;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   SHOP CONTROLS
+======================================== */
+
+.controls {
+  display: flex;
+
+  gap: 10px;
+}
+
+.controls select {
+  padding: 11px 13px;
+
+  background: transparent;
+
+  border: 1px solid #cfc7ba;
+
+  color: #4c473f;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   PRODUCT GRID
+======================================== */
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+  cursor: pointer;
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.product-image {
+  height: 330px;
+
+  background: #e7e0d5;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+
+/* ========================================
+   FAVORITE HEART
+======================================== */
+
+.heart {
+  position: absolute;
+
+  right: 13px;
+
+  top: 13px;
+
+  width: 36px;
+
+  height: 36px;
+
+  border-radius: 50%;
+
+  border: 0;
+
+  background: rgba(247, 244, 238, 0.8);
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.heart:hover {
+  transform: scale(1.1);
+
+  background: #fff;
+}
+
+
+/* ========================================
+   PRODUCT INFORMATION
+======================================== */
+
+.product-info {
+  padding: 15px 2px;
+}
+
+.product-info .category {
+  color: #8a6e48;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+.product-info h3 {
+  font-size: 17px;
+
+  font-weight: 400;
+
+  margin: 7px 0;
+}
+
+.price {
+  color: #4e4941;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+}
+
+
+/* ========================================
+   DEALER BANNER
+======================================== */
+
+.dealer-banner {
+  background: #302c26;
+
+  color: #eee8dd;
+
+  padding: 85px 10%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.dealer-banner h2 {
+  font-size: 43px;
+
+  font-weight: 400;
+
+  margin: 0 0 15px;
+}
+
+.dealer-banner p:not(.eyebrow) {
+  max-width: 580px;
+
+  color: #cfc6b9;
+
+  line-height: 1.7;
+}
+
+
+/* LIGHT BUTTON */
+
+.light {
+  background: #eee8dd;
+
+  color: #302c26;
+
+  white-space: nowrap;
+}
+
+
+/* ========================================
+   JOURNAL
+======================================== */
+
+.journal {
+  text-align: center;
+}
+
+.journal h2 {
+  font-size: 42px;
+
+  font-weight: 400;
+
+  margin: 0;
+}
+
+
+/* JOURNAL GRID */
+
+.journal-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+
+  text-align: left;
+
+  margin-top: 35px;
+}
+
+
+/* ARTICLE IMAGE */
+
+.article-img {
+  height: 230px;
+
+  background: #d8cdbd;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #746450;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 0.18em;
+}
+
+
+/* ARTICLE TITLE */
+
+.journal article h3 {
+  font-size: 21px;
+
+  font-weight: 400;
+
+  line-height: 1.35;
+}
+
+
+/* ARTICLE LINK */
+
+.journal article a {
+  color: #796145;
+
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+  background: #211f1b;
+
+  color: #e5dfd4;
+
+  padding: 70px 5% 25px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr 1fr 1fr 1.5fr;
+
+  gap: 40px;
+
+  position: relative;
+}
+
+
+/* FOOTER HEADINGS */
+
+footer h4 {
+  color: #a9967b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+
+/* FOOTER LINKS */
+
+footer a {
+  display: block;
+
+  color: #d8d0c4;
+
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  margin: 13px 0;
+}
+
+
+/* FOOTER LOGO */
+
+.footer-logo {
+  font-size: 22px;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+  grid-column: 1 / -1;
+
+  border-top: 1px solid #413c35;
+
+  padding-top: 20px;
+
+  margin-top: 30px;
+
+  color: #898177;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+}
+
+
+/* ========================================
+   NEWSLETTER
+======================================== */
+
+#newsletter {
+  display: flex;
+
+  max-width: 300px;
+
+  border-bottom: 1px solid #756d61;
+}
+
+#newsletter input {
+  flex: 1;
+
+  background: none;
+
+  border: 0;
+
+  padding: 12px 0;
+
+  color: white;
+
+  outline: none;
+}
+
+#newsletter input::placeholder {
+  color: #aaa298;
+}
+
+#newsletter button {
+  background: none;
+
+  border: 0;
+
+  color: white;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   MODAL
+======================================== */
+
+.modal {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 20;
+
+  padding: 20px;
+}
+
+
+/* HIDDEN MODAL */
+
+.modal.hidden {
+  display: none;
+}
+
+
+/* MODAL BOX */
+
+.modal-box {
+  background: #f7f4ee;
+
+  max-width: 700px;
+
+  width: 100%;
+
+  padding: 45px;
+
+  position: relative;
+
+  max-height: 90vh;
+
+  overflow: auto;
+}
+
+
+/* CLOSE BUTTON */
+
+.close {
+  position: absolute;
+
+  right: 18px;
+
+  top: 12px;
+
+  background: none;
+
+  border: 0;
+
+  font-size: 28px;
+
+  cursor: pointer;
+
+  color: #29251f;
+}
+
+
+/* MODAL TITLE */
+
+.modal-box h2 {
+  font-size: 32px;
+
+  font-weight: 400;
+}
+
+
+/* MODAL DESCRIPTION */
+
+.modal-box p {
+  color: #625c53;
+
+  line-height: 1.7;
+}
+
+
+/* MODAL INPUTS */
+
+.modal-box input,
+.modal-box textarea {
+  width: 100%;
+
+  padding: 13px;
+
+  margin: 7px 0;
+
+  border: 1px solid #ccc2b2;
+
+  background: white;
+
+  font-family: Arial, sans-serif;
+
+  outline: none;
+}
+
+.modal-box input:focus,
+.modal-box textarea:focus {
+  border-color: #8a6e48;
+}
+
+
+/* ========================================
+   TOAST NOTIFICATION
+======================================== */
+
+.toast {
+  position: fixed;
+
+  bottom: 25px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%)
+    translateY(20px);
+
+  background: #28241f;
+
+  color: white;
+
+  padding: 13px 20px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: 0.3s;
+
+  z-index: 30;
+}
+
+.toast.show {
+  opacity: 1;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .product-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .category-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+
+  .dealer-banner {
+    display: block;
+  }
+
+
+  .dealer-banner .btn {
+    margin-top: 30px;
+  }
+
+
+  .journal-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  footer {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .top-links {
+    display: none;
+  }
+
+
+  .topbar {
+    justify-content: center;
+
+    padding: 0 15px;
+
+    text-align: center;
+  }
+
+
+  .nav {
+    height: 75px;
+
+    padding: 0 20px;
+  }
+
+
+  .logo b {
+    font-size: 21px;
+  }
+
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+
+  .nav-actions button {
+    font-size: 11px;
+  }
+
+
+  .nav-actions button:first-child {
+    font-size: 22px;
+  }
+
+
+  .hero {
+    min-height: 560px;
+
+    padding: 30px;
+  }
+
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+
+  .hero p:not(.eyebrow) {
+    font-size: 15px;
+  }
+
+
+  .intro {
+    padding:
+      75px 20px 60px;
+  }
+
+
+  .intro h2,
+  .section-head h2,
+  .journal h2 {
+    font-size: 33px;
+  }
+
+
+  .categories,
+  .shop,
+  .journal {
+    padding:
+      45px 20px 65px;
+  }
+
+
+  .category-grid,
+  .product-grid,
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .product-image {
+    height: 380px;
+  }
+
+
+  .controls {
+    margin-top: 20px;
+
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+
+  .controls select {
+    width: 100%;
+  }
+
+
+  .section-head {
+    display: block;
+  }
+
+
+  .dealer-banner {
+    padding:
+      60px 25px;
+  }
+
+
+  .dealer-banner h2 {
+    font-size: 34px;
+  }
+
+
+  .dealer-banner p:not(.eyebrow) {
+    font-size: 15px;
+  }
+
+
+  footer {
+    grid-template-columns: 1fr;
+
+    padding:
+      55px 25px;
+  }
+
+
+  .copyright {
+    grid-column: 1;
+  }
+
+
+  .modal-box {
+    padding: 30px 22px;
+  }
+
+}

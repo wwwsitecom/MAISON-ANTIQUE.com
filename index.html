@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maison Antique — Fine Antiques & Collectibles</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="announcement">
+      Curated antiques from independent dealers & collectors
+    </div>
+
+    <div class="top-links">
+      <a href="#dealers">Become a Dealer</a>
+      <a href="#about">About Us</a>
+    </div>
+  </header>
+
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+
+    <a class="logo" href="#">
+      <span>MAISON</span>
+      <b>ANTIQUE</b>
+    </a>
+
+    <div class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#dealers">Dealers</a>
+      <a href="#about">Journal</a>
+    </div>
+
+    <div class="nav-actions">
+      <button id="searchBtn">⌕</button>
+
+      <button id="favoritesBtn">
+        ♡ <span id="favCount">0</span>
+      </button>
+
+      <button id="accountBtn">
+        Account
+      </button>
+    </div>
+
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-copy">
+
+      <p class="eyebrow">
+        TIMELESS OBJECTS · NEWLY DISCOVERED
+      </p>
+
+      <h1>
+        Objects with a<br>
+        <em>story to tell.</em>
+      </h1>
+
+      <p>
+        Explore carefully selected furniture, art, jewelry,
+        ceramics and collectibles from independent dealers.
+      </p>
+
+      <a class="btn" href="#shop">
+        Explore Collection
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+  <section class="intro" id="about">
+
+    <p class="eyebrow">
+      THE COLLECTION
+    </p>
+
+    <h2>
+      Discover something extraordinary.
+    </h2>
+
+    <p class="intro-text">
+      A modern marketplace for people who appreciate
+      the beauty, craftsmanship and history of exceptional objects.
+    </p>
+
+  </section>
+
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+
+    <div class="section-head">
+
+      <div>
+        <p class="eyebrow">BROWSE</p>
+
+        <h2>
+          Shop by category
+        </h2>
+      </div>
+
+    </div>
+
+
+    <div class="category-grid">
+
+      <button data-category="Furniture">
+        <span>🪑</span>
+        <b>Furniture</b>
+        <small>Tables, cabinets & seating</small>
+      </button>
+
+      <button data-category="Art">
+        <span>🖼️</span>
+        <b>Art & Paintings</b>
+        <small>Paintings, prints & drawings</small>
+      </button>
+
+      <button data-category="Jewelry">
+        <span>💎</span>
+        <b>Jewelry</b>
+        <small>Vintage & antique jewelry</small>
+      </button>
+
+      <button data-category="Ceramics">
+        <span>🏺</span>
+        <b>Ceramics & Glass</b>
+        <small>Porcelain, pottery & glass</small>
+      </button>
+
+      <button data-category="Clocks">
+        <span>⏰</span>
+        <b>Clocks</b>
+        <small>Timepieces & barometers</small>
+      </button>
+
+      <button data-category="Collectibles">
+        <span>🏛️</span>
+        <b>Collectibles</b>
+        <small>Rare and unusual objects</small>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- SHOP -->
+  <section class="shop" id="shop">
+
+    <div class="section-head">
+
+      <div>
+        <p class="eyebrow">
+          CURATED FOR YOU
+        </p>
+
+        <h2>
+          Featured objects
+        </h2>
+      </div>
+
+
+      <div class="controls">
+
+        <select id="categoryFilter">
+
+          <option value="All">
+            All categories
+          </option>
+
+          <option>
+            Furniture
+          </option>
+
+          <option>
+            Art
+          </option>
+
+          <option>
+            Jewelry
+          </option>
+
+          <option>
+            Ceramics
+          </option>
+
+          <option>
+            Clocks
+          </option>
+
+          <option>
+            Collectibles
+          </option>
+
+        </select>
+
+
+        <select id="sort">
+
+          <option value="featured">
+            Featured
+          </option>
+
+          <option value="low">
+            Price: Low to High
+          </option>
+
+          <option value="high">
+            Price: High to Low
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <div id="productGrid" class="product-grid"></div>
+
+  </section>
+
+
+  <!-- DEALER SECTION -->
+  <section class="dealer-banner" id="dealers">
+
+    <div>
+
+      <p class="eyebrow">
+        FOR PROFESSIONAL DEALERS
+      </p>
+
+      <h2>
+        Share your collection<br>
+        with collectors worldwide.
+      </h2>
+
+      <p>
+        Open a dealer profile and showcase your pieces
+        in front of a community of antique lovers.
+      </p>
+
+    </div>
+
+    <button class="btn light" id="dealerBtn">
+      Become a Dealer
+    </button>
+
+  </section>
+
+
+  <!-- JOURNAL -->
+  <section class="journal">
+
+    <p class="eyebrow">
+      OUR JOURNAL
+    </p>
+
+    <h2>
+      Stories behind the objects
+    </h2>
+
+
+    <div class="journal-grid">
+
+      <article>
+
+        <div class="article-img">
+          ARCHITECTURE
+        </div>
+
+        <h3>
+          How to recognize quality in antique furniture
+        </h3>
+
+        <a href="#">
+          Read story →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <div class="article-img">
+          COLLECTING
+        </div>
+
+        <h3>
+          Starting an antique collection: where to begin
+        </h3>
+
+        <a href="#">
+          Read story →
+        </a>
+
+      </article>
+
+
+      <article>
+
+        <div class="article-img">
+          HISTORY
+        </div>
+
+        <h3>
+          The enduring beauty of objects made by hand
+        </h3>
+
+        <a href="#">
+          Read story →
+        </a>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+
+    <div class="footer-logo">
+      MAISON ANTIQUE
+    </div>
+
+
+    <div>
+
+      <h4>
+        Explore
+      </h4>
+
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#dealers">Dealers</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Information
+      </h4>
+
+      <a href="#about">About</a>
+      <a href="#">Shipping</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Newsletter
+      </h4>
+
+      <p>
+        New arrivals and stories, occasionally.
+      </p>
+
+      <form id="newsletter">
+
+        <input
+          type="email"
+          placeholder="Your email"
+          required
+        >
+
+        <button>
+          →
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 Maison Antique.
+      A marketplace for remarkable objects.
+    </div>
+
+  </footer>
+
+
+  <!-- MODAL -->
+  <div class="modal hidden" id="modal">
+
+    <div class="modal-box">
+
+      <button class="close" id="closeModal">
+        ×
+      </button>
+
+      <div id="modalContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
